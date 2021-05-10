@@ -29,7 +29,7 @@ class App extends React.Component {
 		try {
 			axios.defaults.headers.common['Authorization'] = token;
 			const response = await axios.post(
-				`http://localhost:3001/users/verify_token`
+				`https://project-blog-server.herokuapp.com/users/verify_token`
 			);
 			return response.data.ok
 				? this.setState({
