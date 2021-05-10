@@ -20,7 +20,7 @@ class Home extends React.Component {
 
 	getData = () => {
 		axios
-			.get(`${URL}/posts`)
+			.get(`https://project-blog-server.herokuapp.com/posts`)
 			.then((res) => {
 				console.log('data has being received ==>', res.data);
 				var data = res.data;
