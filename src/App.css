@@ -1,0 +1,146 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  margin-left: 1em;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  color: pink !important /* NOT WORKING */
+}
+
+/* POSTS */
+.postsGeneral{
+  border-bottom: 1px solid grey;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.postIntro {
+  text-align: center;
+}
+
+.postDetails {
+  text-align: left;
+}
+.postDetails h5 {
+  margin-bottom: 0px;
+}
+.postDetails h6 {
+  margin-top: 5px;
+}
+
+.postBody {
+  text-align: center;
+}
+
+/* CREATE */
+.createBlogTitle {
+  text-align: center;
+}
+
+.createBlogInputs { 
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px 0 50px;
+}
+
+.createBlogMeta {
+  width: 80%;
+  height: 10%;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px 0 50px;
+}
+
+.createBlogBody {
+  width: 80%;
+  height: 10%;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px 0 50px;
+}
+
+.createBlogOthers {
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px 0 50px;
+}
+
+.createBlogButton { 
+  text-align: center !important;
+  transition-duration: 0.4s !important;
+}
+
+/* ADMIN */
+.admin {
+  text-align: center;  
+  }
+  
+.admin button {
+  cursor: pointer;
+  display: inline-block;
+  min-height: 1em;
+  outline: 0;
+  border: none;
+  vertical-align: baseline;
+  background: #e0e1e2 none;
+  color: rgba(0,0,0,.6);
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  margin: 0 .25em 0 0;
+  padding: .78571429em 1.5em .78571429em;
+  text-transform: none;
+  text-shadow: none;
+  font-weight: 700;
+  line-height: 1em;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  border-radius: .28571429rem;
+  box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgb(34 36 38 / 15%) inset;
+  -webkit-user-select: none;
+  user-select: none;
+  will-change: '';
+  -webkit-tap-highlight-color: transparent;
+}
+
+.admin button:hover {
+  background-color: rgb(34 36 38 / 25%);
+}
+
+
+/* OTHERS */
+
+.grid-foto img{
+  width: 10%;
+}
+
+.search-blog {
+  margin-left: -10px;
+  position: relative;
+  width: 20%;
+  text-align: center;
+  border: 1px solid grey;
+  box-shadow: -3px 3px #000;
+  margin-left: 50px;
+  margin-right: 100px;
+}
+
+/* LOGIN & REGISTER */
+
+.login {
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  padding: 0px 50px 0px 50px;
+  }
+
+.register {
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px 0 50px;
+  width: 40%;
+  }
