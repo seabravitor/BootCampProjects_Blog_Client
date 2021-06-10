@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 import './App.css';
+import { URL } from '../configurations/url';
 import Home from './components/Home';
 import Register from './components/Register';
 import Login from './components/Login';
@@ -32,9 +33,7 @@ class App extends React.Component {
 			});
 		try {
 			axios.defaults.headers.common['Authorization'] = token;
-			const response = await axios.post(
-				`https://project-blog-server.herokuapp.com/users/verify_token`
-			);
+			const response = await axios.post(`${URL}/users/verify_token`);
 			return response.data.ok
 				? this.setState({
 						...this.state,
