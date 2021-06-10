@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 import './App.css';
-import { URL } from '../configurations/url';
+import { URL } from './configurations/url';
 import Home from './components/Home';
 import Register from './components/Register';
 import Login from './components/Login';
