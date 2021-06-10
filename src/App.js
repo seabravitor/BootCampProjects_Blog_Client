@@ -8,7 +8,7 @@ import Login from './components/Login';
 import Navbar from './components/Navbar';
 import Admin from './components/Admin.js';
 import Create from './components/Create.js';
-//import myBlog from './components/Myblogs';
+import MyBlogs from './components/MyBlogs';
 
 class App extends React.Component {
 	state = {
@@ -18,6 +18,10 @@ class App extends React.Component {
 		filtered: [],
 		isLoggedIn: false,
 	};
+
+	componentDidMount() {
+		this.verify_token();
+	}
 
 	verify_token = async () => {
 		const token = JSON.parse(localStorage.getItem('token'));
@@ -45,10 +49,6 @@ class App extends React.Component {
 		}
 	};
 
-	componentDidMount() {
-		this.verify_token();
-	}
-
 	login = (token) => {
 		localStorage.setItem('token', JSON.stringify(token));
 		console.log('token ===>', token);
@@ -71,7 +71,7 @@ class App extends React.Component {
 		return (
 			<div>
 				<Router>
-					<Navbar className="navbar" isLoggedIn={this.state.isLoggedIn} />
+					<Navbar isLoggedIn={this.state.isLoggedIn} />
 					<Route exact path="/" component={Home} />
 					<Route
 						path="/login"
@@ -107,6 +107,12 @@ class App extends React.Component {
 						path="/create"
 						render={(props) =>
 							!this.state.isLoggedIn ? <Redirect to={'/login'} /> : <Create />
+						}
+					/>
+					<Route
+						path="/myblogs"
+						render={(props) =>
+							!this.state.isLoggedIn ? <Redirect to={'/login'} /> : <MyBlogs />
 						}
 					/>
 				</Router>

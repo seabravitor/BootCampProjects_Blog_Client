@@ -1,8 +1,7 @@
 import React from 'react';
-import Post from './Post';
+import PostSum from './PostSum';
 import axios from 'axios';
 import { URL } from '../configurations/url';
-import { Button, Input } from 'semantic-ui-react';
 
 class Home extends React.Component {
 	constructor(props) {
@@ -20,7 +19,7 @@ class Home extends React.Component {
 
 	getData = () => {
 		axios
-			.get(`https://project-blog-server.herokuapp.com/posts`)
+			.get(`${URL}/posts`)
 			.then((res) => {
 				console.log('data has being received ==>', res.data);
 				var data = res.data;
@@ -63,7 +62,8 @@ class Home extends React.Component {
 
 		if (this.state.title !== '') {
 			filter = this.state.filtered.map((d, i) => (
-				<Post
+				<PostSum
+					id={d._id}
 					key={i}
 					title={d.title}
 					body={d.body}
@@ -76,7 +76,8 @@ class Home extends React.Component {
 			));
 		} else {
 			filter = this.state.catalogue.map((d, i) => (
-				<Post
+				<PostSum
+					id={d._id}
 					key={i}
 					title={d.title}
 					body={d.body}
@@ -92,6 +93,10 @@ class Home extends React.Component {
 		return (
 			<div>
 				<form onChange={this.handleOnChange} onSubmit={this.handleOnClick}>
+					<div className="title">
+						<h2>Welcome to Speak Freely.Platform</h2>
+						<h4>👾 🏳️‍🌈 👽 💪🏼 🏄🏼‍♂️ 🤖 🧑🏾‍💻 👩🏼‍🦼 💀</h4>
+					</div>
 					<input
 						placeholder=" 🔍 Search Blog..."
 						className="search-blog"
