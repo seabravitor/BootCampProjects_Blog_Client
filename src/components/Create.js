@@ -12,7 +12,6 @@ class Create extends Component {
 		body: '',
 		writer: '',
 		createdAt: new Date(),
-		image: DefaultImg,
 	};
 
 	componentDidMount() {
