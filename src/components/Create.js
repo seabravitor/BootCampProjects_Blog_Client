@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { URL } from '../configurations/url';
-import DefaultImg from '../pictures/default.png';
 import { Button, Checkbox, Form, Input, TextArea } from 'semantic-ui-react';
 
 class Create extends Component {
