@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Blog Project - Barcelona Code School Bootcamp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Access live blog: https://project-blog-client.herokuapp.com/
 
-## Available Scripts
+This is a generic blog website, where you will find a home page with blogs written by users or/and you can register to start writing whatever topic you are willing to share with the community.
 
-In the project directory, you can run:
+This project was developed as a final project for a Full-Stack Javascript and React Bootcamp hosted by Barcelona Code School. 
 
-### `npm start`
+This project uses React and Node as its main technology (see server part here: https://github.com/seabravitor/BootCampProjects_Blog_Server)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Captura de Tela 2021-07-26 às 16.29.11<img width="1622" alt="Captura de Tela 2021-07-26 às 16 29 11" src="https://user-images.githubusercontent.com/82412725/127006032-6e36053c-515d-4999-9c4f-75e87f939ce3.png">
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Installation
 
-### `npm test`
+Install all dependencies
+```bash
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Available Scripts 
+```bash
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+```
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+It's usage only recommended for web version.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Status
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project is on its beta version. 
 
-### `npm run eject`
+## Features
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Home Page 
+2. Registration
+3. Admin Access
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Techonologies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+React 
+Node.js
+MongoDB
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Improvements Blog 2.0
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Not display password (Register & Login)
+- Fix Bug with MyBlogs Page - Showing others users blog + problem with delete.
+- Add images to a blog
+- Open articles in a separate and full page
+- Add articles carrousel at the bottom page
+- Makes SEO Friendly
